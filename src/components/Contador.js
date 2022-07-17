@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { reset, restar, restar5, sumar, sumar5 } from '../actions/contadorActions';
 
 const Contador = () => {
+    // se puede acceder al state ya que en app.js esta el provider de state
     const state = useSelector(state => state);
     const dispatch = useDispatch()
     return (
