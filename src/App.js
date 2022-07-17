@@ -4,6 +4,7 @@ import TeoriaRedux from "./components/TeoriaRedux";
 import { Provider } from "react-redux";
 // agregamos es store creado
 import store from "./store";
+import Contador from "./components/Contador";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Provider store={store}>
       <div style={{ textAlign: "center" }}>
         <h1>Redux</h1>
+        <Contador/>
         <hr />
         <TeoriaRedux />
       </div>
